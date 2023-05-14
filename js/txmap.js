@@ -12,7 +12,6 @@ $.ajax({
         showWelcome();
     }
 })
-
 //根据经纬度计算两点距离(点1经度,点1纬度,点2经度,点2纬度)
 function getDistance(e1, n1, e2, n2) {
     const R = 6371

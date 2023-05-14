@@ -110,6 +110,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/readPercent.css"/>
+      <url>/css/readPercent.css</url>
+      
+        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
       
@@ -125,17 +136,6 @@
       <url>/css/custom.css</url>
       
         <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }    /* 白天模式遮罩透明 */    /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }  /* 翻页按钮居中 */#pagination {    width: 100%;    margin: auto;  }  /* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {    background: linear-gradient(      -45deg,      #e8d8b9,      #eccec5,      #a3e9eb,      #bdbdf0,      #eec1ea    );    box-shadow: 0 0 5px rgb(66, 68, 68);    position: relative;    background-size: 400% 400%;    -webkit-animation: Gradient 10s ease infinite;    -moz-animation: Gradient 10s ease infinite;    animation: Gradient 10s ease infinite !important;  }  @-webkit-keyframes Gradient {    0% {      background-position: 0% 50%;    }    50% {      background-position: 100% 50%;    }    100% {      background-position: 0% 50%;    }  }  @-moz-keyframes Gradient {    0% {      background-position: 0% 50%;    }    50% {      background-position: 100% 50%;    }    100% {      background-position: 0% 50%;    }  }  @keyframes Gradient {    0% {      background-position: 0% 50%;    }    50% {      background-position: 100% 50%;    }    100% {      background-position: 0% 50%;    }  }    /* 黑夜模式适配 */  [data-theme="dark"] #aside-content > .card-widget.card-info {    background: #191919ee;  }    /* 个人信息Follow me按钮 */  #aside-content > .card-widget.card-info > #card-info-btn {    background-color: #3eb8be;    border-radius: 8px;  }  /* 鼠标样式 */#cursor {    position: fixed;    width: 16px;    height: 16px;    /* 这里改变跟随的底色 */    background: rgb(57, 197, 187);    border-radius: 8px;    opacity: 0.25;    z-index: 10086;    pointer-events: none;    transition: 0.2s ease-in-out;    transition-property: background, opacity, transform;  }    #cursor.hidden {    opacity: 0;  }    #cursor.hover {    opacity: 0.1;    transform: scale(2.5);    -webkit-transform: scale(2.5);    -moz-transform: scale(2.5);    -ms-transform: scale(2.5);    -o-transform: scale(2.5);  }    #cursor.active {    opacity: 0.5;    transform: scale(0.5);    -webkit-transform: scale(0.5);    -moz-transform: scale(0.5);    -ms-transform: scale(0.5);    -o-transform: scale(0.5);  }  /* 帧率检测 */#fps {    position: fixed;    /* 指定位置 */    left: 15px;    bottom: 15px;    z-index: 1919810;  }  [data-theme="light"] #fps {    background-color: rgba(255, 255, 255, 0.85);    backdrop-filter: var(--backdrop-filter);    padding: 8px;    border-radius: 4px;  }  [data-theme="dark"] #fps {    background-color: rgba(0, 0, 0, 0.72);    backdrop-filter: var(--backdrop-filter);    padding: 8px;    border-radius: 4px;  }  .card-info-avatar .author-status-box {    position: absolute;    bottom: 0;    left: calc(100% - 28px);    width: 28px;    height: 28px;    border: 1px solid #d0d7de;    border-radius: 2em;    background-color: #f8f8f8f8;    transition: 0.4s;    overflow: hidden;  }    [data-theme="dark"] .card-info-avatar .author-status-box {    background-color: #222222f2;    border: 1px solid #5c6060;  }    .card-info-avatar .author-status-box .author-status {    display: flex;    align-items: center;    justify-content: center;    height: 28px;    padding: 0 5px;  }    .card-info-avatar .author-status-box:hover {    width: 105px;  }    .card-info-avatar .author-status-box:hover .author-status span {    width: 105px;    margin-left: 4px;  }    .card-info-avatar .author-status-box .author-status span {    width: 0;    font-size: 12px;    height: 100%;    overflow: hidden;    text-overflow: ellipsis;    white-space: nowrap;    transition: 0.4s;  }    .card-widget .card-info-avatar {    display: inline-block;    position: relative;  }  /* 信息卡片彩带 */.author_top:hover {  background: url(https://tuchuang.voooe.cn/images/2023/01/02/snow.gif);  background-size: cover;}/* 个人信息卡片背景图 */[data-theme="light"] #aside-content > .card-widget.card-info {  background-image: url(https://cdn.skypro.cartafi.cn/2023/04/20/springBg.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}[data-theme="dark"] #aside-content > .card-widget.card-info {  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);  background-repeat: no-repeat;  background-attachment: inherit;  background-size: 100%;}/* 头像呼吸灯 */[data-theme="light"] .avatar-img {  animation: huxi_light 4s ease-in-out infinite;}[data-theme="dark"] .avatar-img {  animation: huxi_dark 4s ease-in-out infinite;}@keyframes huxi_light {  0% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }  50% {    box-shadow: 0px 0px 5px 5px #e9f5fa;  }  100% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }}@keyframes huxi_dark {  0% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }  50% {    box-shadow: 0px 0px 5px 5px #39c5bb;  }  100% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }}/* 波浪css */.main-hero-waves-area {  width: 100%;  position: absolute;  left: 0;  bottom: -11px;  z-index: 5;}.waves-area .waves-svg {  width: 100%;  height: 5rem;}/* Animation */.parallax > use {  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;}.parallax > use:nth-child(1) {  animation-delay: -2s;  animation-duration: 7s;  fill: #f7f9febd;}.parallax > use:nth-child(2) {  animation-delay: -3s;  animation-duration: 10s;  fill: #f7f9fe82;}.parallax > use:nth-child(3) {  animation-delay: -4s;  animation-duration: 13s;  fill: #f7f9fe36;}.parallax > use:nth-child(4) {  animation-delay: -5s;  animation-duration: 20s;  fill: #f7f9fe;}/* 黑色模式背景 */[data-theme="dark"] .parallax > use:nth-child(1) {  animation-delay: -2s;  animation-duration: 7s;  fill: #18171dc8;}[data-theme="dark"] .parallax > use:nth-child(2) {  animation-delay: -3s;  animation-duration: 10s;  fill: #18171d80;}[data-theme="dark"] .parallax > use:nth-child(3) {  animation-delay: -4s;  animation-duration: 13s;  fill: #18171d3e;}[data-theme="dark"] .parallax > use:nth-child(4) {  animation-delay: -5s;  animation-duration: 20s;  fill: #18171d;}@keyframes move-forever {  0% {    transform: translate3d(-90px, 0, 0);  }  100% {    transform: translate3d(85px, 0, 0);  }}/*Shrinking for mobile*/@media (max-width: 768px) {  .waves-area .waves-svg {    height: 40px;    min-height: 40px;  }}/* 滚动条样式 */::-webkit-scrollbar {  width: 8px;  height: 8px;}::-webkit-scrollbar-track {  background-color: rgba(73, 177, 245, 0.2);  border-radius: 2em;}::-webkit-scrollbar-thumb {  background-color: var(--theme-color);  background-image: -webkit-linear-gradient(    45deg,    rgba(255, 255, 255, 0.4) 25%,    transparent 25%,    transparent 50%,    rgba(255, 255, 255, 0.4) 50%,    rgba(255, 255, 255, 0.4) 75%,    transparent 75%,    transparent  );  border-radius: 2em;}::-webkit-scrollbar-corner {  background-color: transparent;}::-moz-selection {  color: #fff;  background-color: rgb(107, 113, 219);}/* 欢迎信息 */#welcome-info {  background: linear-gradient(45deg, #b9f4f3, #e3fbf9);  border-radius: 18px;  padding: 8px;}[data-theme="dark"] #welcome-info {  background: #212121;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/readPercent.css"/>
-      <url>/css/readPercent.css</url>
-      
-        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
       
     </entry>
     
@@ -164,6 +164,28 @@
     
     
     <entry>
+      <title></title>
+      <link href="/js/txmap.js"/>
+      <url>/js/txmap.js</url>
+      
+        <content type="html"><![CDATA[//get请求$.ajax({    type: 'get',    url: 'https://apis.map.qq.com/ws/location/v1/ip',    data: {        key: 'BNBBZ-OREKZ-J7JXK-ZOX4O-5IFZ6-CSFPH',        output: 'jsonp',    },    dataType: 'jsonp',    success: function (res) {        ipLoacation = res;        showWelcome();    }})//根据经纬度计算两点距离(点1经度,点1纬度,点2经度,点2纬度)function getDistance(e1, n1, e2, n2) {    const R = 6371    const { sin, cos, asin, PI, hypot } = Math    let getPoint = (e, n) => {        e *= PI / 180        n *= PI / 180        return { x: cos(n) * cos(e), y: cos(n) * sin(e), z: sin(n) }    }    let a = getPoint(e1, n1)    let b = getPoint(e2, n2)    let c = hypot(a.x - b.x, a.y - b.y, a.z - b.z)    let r = asin(c / 2) * 2 * R    return Math.round(r);}//根据自己的需求定制function showWelcome() {    if (!document.getElementById("welcome-info")) return    let dist = getDistance(120.57186, 31.29579, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里记录你自己的经纬度    let pos = ipLoacation.result.ad_info.nation;    let posdesc;    //根据国家、省份、城市信息自定义欢迎语    //海外地区不支持省份及城市信息    switch (ipLoacation.result.ad_info.nation) {        case "日本":            posdesc = "よろしく，一起去看樱花吗";            break;        case "美国":            posdesc = "Make America Great Again!";            break;        case "英国":            posdesc = "想同你一起夜乘伦敦眼";            break;        case "俄罗斯":            posdesc = "干了这瓶伏特加！";            break;        case "法国":            posdesc = "C'est La Vie";            break;        case "德国":            posdesc = "Die Zeit verging im Fluge.";            break;        case "澳大利亚":            posdesc = "一起去大堡礁吧！";            break;        case "加拿大":            posdesc = "拾起一片枫叶赠予你";            break;        case "中国":            pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city;            switch (ipLoacation.result.ad_info.province) {                case "北京市":                    pos = "北京市";                    posdesc = "北——京——欢迎你~~~";                    break;                case "天津市":                    pos = "天津市";                    posdesc = "讲段相声吧。";                    break;                case "重庆市":                    pos = "重庆市";                    posdesc = "高德地图:已到达重庆，下面交给百度地图导航。"                    break;                case "河北省":                    posdesc = "山势巍巍成壁垒，天下雄关。铁马金戈由此向，无限江山。";                    break;                case "山西省":                    posdesc = "展开坐具长三尺，已占山河五百余。";                    break;                case "内蒙古自治区":                    posdesc = "天苍苍，野茫茫，风吹草低见牛羊。";                    break;                case "辽宁省":                    posdesc = "我想吃烤鸡架！";                    break;                case "吉林省":                    posdesc = "状元阁就是东北烧烤之王。";                    break;                case "黑龙江省":                    posdesc = "很喜欢哈尔滨大剧院。";                    break;                case "上海市":                    pos = "上海市";                    posdesc = "众所周知，中国只有两个城市。";                    break;                case "江苏省":                    switch (ipLoacation.result.ad_info.city) {                        case "南京市":                            posdesc = "欢迎来自安徽省南京市的小伙伴。";                            break;                        case "苏州市":                            posdesc = "上有天堂，下有苏杭。";                            break;                        case "泰州市":                            posdesc = "这里也是我的故乡。";                            break;                        default:                            posdesc = "散装是必须要散装的。";                            break;                    }                    break;                case "浙江省":                    posdesc = "东风渐绿西湖柳，雁已还人未南归。";                    break;                case "安徽省":                    posdesc = "蚌埠住了，芜湖起飞。";                    break;                case "福建省":                    posdesc = "井邑白云间，岩城远带山。";                    break;                case "江西省":                    posdesc = "落霞与孤鹜齐飞，秋水共长天一色。";                    break;                case "山东省":                    posdesc = "遥望齐州九点烟，一泓海水杯中泻。";                    break;                case "湖北省":                    posdesc = "来碗热干面！";                    break;                case "湖南省":                    posdesc = "74751，长沙斯塔克。";                    break;                case "广东省":                    posdesc = "老板来两斤福建人。";                    break;                case "广西壮族自治区":                    posdesc = "桂林山水甲天下。";                    break;                case "海南省":                    posdesc = "朝观日出逐白浪，夕看云起收霞光。";                    break;                case "四川省":                    posdesc = "康康川妹子。";                    break;                case "贵州省":                    posdesc = "茅台，学生，再塞200。";                    break;                case "云南省":                    posdesc = "玉龙飞舞云缠绕，万仞冰川直耸天。";                    break;                case "西藏自治区":                    posdesc = "躺在茫茫草原上，仰望蓝天。";                    break;                case "陕西省":                    posdesc = "来份臊子面加馍。";                    break;                case "甘肃省":                    posdesc = "羌笛何须怨杨柳，春风不度玉门关。";                    break;                case "青海省":                    posdesc = "牛肉干和老酸奶都好好吃。";                    break;                case "宁夏回族自治区":                    posdesc = "大漠孤烟直，长河落日圆。";                    break;                case "新疆维吾尔自治区":                    posdesc = "驼铃古道丝绸路，胡马犹闻唐汉风。";                    break;                case "台湾省":                    posdesc = "我在这头，大陆在那头。";                    break;                case "香港特别行政区":                    pos = "香港特别行政区";                    posdesc = "永定贼有残留地鬼嚎，迎击光非岁玉。";                    break;                case "澳门特别行政区":                    pos = "澳门特别行政区";                    posdesc = "性感荷官，在线发牌。";                    break;                default:                    posdesc = "社会主义大法好。";                    break;            }            break;        default:            posdesc = "带我去你的国家逛逛吧。";            break;    }    //判断时间    let timeChange;    let date = new Date();    if (date.getHours()>= 5 && date.getHours() < 11) timeChange = "<span>上午好</span>，一日之计在于晨";    else if (date.getHours()>= 1 && date.getHours() < 13) timeChange = "<span>中午好</span>，该摸鱼吃午饭了";    else if (date.getHours() >= 13 && date.getHours() < 15) timeChange = "<span>下午好</span>，懒懒地睡个午觉吧！";    else if (date.getHours() >= 15 && date.getHours() < 16) timeChange = "<span>三点几啦</span>，饮茶先啦！";    else if (date.getHours() >= 16 && date.getHours() < 19) timeChange = "<span>夕阳无限好！</span>";    else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>晚上好</span>，夜生活嗨起来！";    else timeChange = "夜深了，早点休息，少熬夜";    //自定义文本需要放的位置    document.getElementById("welcome-info").innerHTML = `欢迎来自<span>${pos}</span>的小伙伴，${timeChange}<br>你距离ichika约有<span>${dist}</span>公里，${posdesc}`;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>music</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>movie</title>
       <link href="/movie/index.html"/>
       <url>/movie/index.html</url>
@@ -178,17 +200,6 @@
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>music</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
