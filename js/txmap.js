@@ -106,7 +106,7 @@ function showWelcome() {
                     break;
                 case "甘肃省":
                     switch (ipLoacation.result.ad_info.city) {
-                        case "临夏市":
+                        case "临夏回族自治州":
                             posdesc = "河州山川鬼斧凿，古韵沉淀岁月痕。";
                             break;
                         case "嘉峪关市":
@@ -119,7 +119,7 @@ function showWelcome() {
                             posdesc = "黄河远上白云间，一片孤城万仞山。";
                             break;
                     }
-                        
+                    break;
                 case "浙江省":
                     posdesc = "东风渐绿西湖柳，雁已还人未南归。";
                     break;
