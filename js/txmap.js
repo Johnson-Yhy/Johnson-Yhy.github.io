@@ -90,6 +90,7 @@ function showWelcome() {
                 case "上海市":
                     posdesc = "众所周知，中国只有两个城市。";
                     break;
+
                 case "江苏省":
                     switch (ipLoacation.result.ad_info.city) {
                         case "南京市":
@@ -103,6 +104,22 @@ function showWelcome() {
                             break;
                     }
                     break;
+                case "甘肃省":
+                    switch (ipLoacation.result.ad_info.city) {
+                        case "临夏市":
+                            posdesc = "河州山川鬼斧凿，古韵沉淀岁月痕。";
+                            break;
+                        case "嘉峪关市":
+                            posdesc = "羌笛何须怨杨柳，春风不度玉门关。";
+                            break;
+                        case "兰州市":
+                            posdesc = "最具江湖气息的城市。烦事先放哈";
+                            break;
+                        default:
+                            posdesc = "黄河远上白云间，一片孤城万仞山。";
+                            break;
+                    }
+                        
                 case "浙江省":
                     posdesc = "东风渐绿西湖柳，雁已还人未南归。";
                     break;
@@ -215,7 +232,7 @@ function showWelcome() {
     try {
         //自定义文本和需要放的位置
         document.getElementById("welcome-info").innerHTML =
-            `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 <span style="color:var(--theme-color)">${pos}</span> 的小伙伴，${timeChange}您现在距离站长约 <span style="color:var(--theme-color)">${dist}</span> 公里，当前的IP地址为： <span style="color:var(--theme-color)">${ip}</span>， ${posdesc}</b>`;
+            `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 <span style="color:var(--blue-custom)">${pos}</span> 的小伙伴，${timeChange}您现在距离站长约 <span style="color:var(--blue-custom)">${dist}</span> 公里，当前的IP地址为： <span style="color:var(--blue-custom)">${ip}</span>， ${posdesc}</b>`;
     } catch (err) {
         // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
     }

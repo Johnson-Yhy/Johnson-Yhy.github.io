@@ -1,3 +1,29 @@
+:root {
+  --blue-custom: #5ea6e5;
+  --loading-color: rgba(207, 246, 247, 0.92);
+  --border-color: #c9c9c9;
+  --color-red: rgb(241, 71, 71);
+  --color-orange: rgb(241, 162, 71);
+  --color-yellow: rgb(241, 238, 71);
+  --color-purple: rgb(179, 71, 241);
+  --color-blue: rgb(102, 204, 255);
+  --color-gray: rgb(226, 226, 226);
+  --color-green: rgb(57, 197, 187);
+  --color-whitegray: rgb(241, 241, 241);
+  --color-pink: rgb(237, 112, 155);
+  --color-black: rgb(0, 0, 0);
+  --color-darkblue: rgb(97, 100, 159);
+  --color-heoblue: rgb(66, 90, 239);
+  --btn-bg: var(--theme-color) !important;
+  --scrollbar-color: var(--theme-color) !important;
+  --border-style: 1px solid rgba(169, 169, 169, 0.7);
+  /* 代码框行数背景色 */
+  --hlnumber-bg: #282c34;
+  /* 代码框顶部背景色 */
+  --hltools-bg: #1c1c1c;
+  /* 代码框背景色 */
+  --hl-bg: #282c34;
+}
 /* 页脚与头图透明 */
 #footer {
     background: transparent !important;
@@ -357,3 +383,9 @@
 [data-theme="dark"] #welcome-info {
   background: #212121;
 }
+/* [--blue-custom="dark"] #welcome-info {
+  background: #007acc;
+}
+[--pink-custom="dark"] #welcome-info {
+  background: #ed709b;
+} */
