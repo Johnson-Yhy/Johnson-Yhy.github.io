@@ -6,4 +6,12 @@ function percent() {
         result = Math.round(a / b * 100), // 计算百分比
         up = document.querySelector("#go-up") // 获取按钮
 
-    if (result 
+    if (result <= 95) {
+        up.childNodes[0].style.display = 'none'
+        up.childNodes[1].style.display = 'block'
+        up.childNodes[1].innerHTML = result;
+    } else {
+        up.childNodes[1].style.display = 'none'
+        up.childNodes[0].style.display = 'block'
+    }
+}
