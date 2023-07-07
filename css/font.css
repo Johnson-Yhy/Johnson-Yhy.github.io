@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'CascadiaCodePL';
+  font-display: swap;
+  src: url('../font/YeZiGongChangRuiYunNongKaiShu-2.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'ziti';
+  font-display: swap;
+  src: url('../font/CascadiaCodeItalic_VTT.ttf') format("truetype");
+}
+
