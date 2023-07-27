@@ -414,3 +414,13 @@
 }
 
 /* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
+/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
+/* #archive,
+#page,
+#category,
+#tag {
+  width: 100%;
+}
+.page:not(.page.home) .aside-content {
+  display: none;
+} */
