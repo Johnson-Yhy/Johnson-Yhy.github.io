@@ -230,10 +230,10 @@
   background-size: 100%;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
+  background-image: url(/image/aurora.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
-  background-size: 100%;
+  background-size: 120%;
 }
 /* 头像呼吸灯 */
 [data-theme="light"] .avatar-img {
